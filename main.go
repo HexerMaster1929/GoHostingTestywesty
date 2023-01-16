@@ -24,7 +24,7 @@ const (
 	checkpoint2URL        = "https://linkvertise.com/224166/darkhub-checkpoint"
 	finishCookieName      = "usedfhytgrbuoeyrbftvuyoisrbnfovuysrbotguynsbrfuoivbhdfruyignbdouirthgbuifsdhngbkudryhngkbudfhgihujadamlogshwid"
 	DONATORCOOKIENAME     = "Em3xfB5sURWGwayuN0CUtHYDNR8Lrh"
-	version               = "2.0.1"
+	version               = "V5.2.1"
 	staffCookieName       = "eXE6QrxMIrzT5ribgfvV1231qwesa"
 )
 
@@ -64,7 +64,7 @@ func main() {
 		panic(err)
 	}
 	app := fiber.New(fiber.Config{
-		AppName:     "Darkhub Key System V" + version,
+		AppName:     "HexHub Key System " + version,
 		ProxyHeader: "CF-Connecting-IP",
 	})
 	// </editor-fold>

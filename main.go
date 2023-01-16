@@ -24,7 +24,7 @@ const (
 	checkpoint2URL        = "https://linkvertise.com/224166/darkhub-checkpoint"
 	finishCookieName      = "usedfhytgrbuoeyrbftvuyoisrbnfovuysrbotguynsbrfuoivbhdfruyignbdouirthgbuifsdhngbkudryhngkbudfhgihujadamlogshwid"
 	DONATORCOOKIENAME     = "Em3xfB5sURWGwayuN0CUtHYDNR8Lrh"
-	version               = "2.0.1"
+	version               = "V5.2.1"
 	staffCookieName       = "eXE6QrxMIrzT5ribgfvV1231qwesa"
 	
 )
@@ -49,7 +49,7 @@ var (
 	ksPub          *keyset.Handle
 	encLabel       = []byte("DARKHUBOPLOL")
 	activeKeyStubs []string
-	Port = process.env.PORT
+	//Port = process.env.PORT
 )
 
 //nolint:funlen
@@ -66,7 +66,7 @@ func main() {
 		panic(err)
 	}
 	app := fiber.New(fiber.Config{
-		AppName:     "Darkhub Key System V" + version,
+		AppName:     "HexHub Key System " + version,
 		ProxyHeader: "CF-Connecting-IP",
 	})
 	// </editor-fold>
@@ -249,7 +249,7 @@ func main() {
 		return c.SendString("OK")
 	})
 	// </editor-fold>
-	err = app.Listen(Port)
+	err = app.Listen(process.env.PORT)
 	if err != nil {
 		log.Panicln(err)
 	}

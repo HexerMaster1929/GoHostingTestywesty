@@ -26,6 +26,7 @@ const (
 	DONATORCOOKIENAME     = "Em3xfB5sURWGwayuN0CUtHYDNR8Lrh"
 	version               = "2.0.1"
 	staffCookieName       = "eXE6QrxMIrzT5ribgfvV1231qwesa"
+	
 )
 
 type (
@@ -48,6 +49,7 @@ var (
 	ksPub          *keyset.Handle
 	encLabel       = []byte("DARKHUBOPLOL")
 	activeKeyStubs []string
+	Port = process.env.PORT
 )
 
 //nolint:funlen
@@ -247,7 +249,7 @@ func main() {
 		return c.SendString("OK")
 	})
 	// </editor-fold>
-	err = app.Listen(":5000")
+	err = app.Listen(Port)
 	if err != nil {
 		log.Panicln(err)
 	}

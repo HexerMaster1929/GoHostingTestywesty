@@ -65,7 +65,7 @@ func main() {
 	}
 	app := fiber.New(fiber.Config{
 		AppName:     "HexHub Key System " + version,
-		ProxyHeader: "CF-Connecting-IP",
+		//ProxyHeader: "CF-Connecting-IP",
 	})
 	// </editor-fold>
 

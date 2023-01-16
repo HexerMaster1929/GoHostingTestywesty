@@ -247,7 +247,7 @@ func main() {
 		return c.SendString("OK")
 	})
 	// </editor-fold>
-	err = app.Listen(env.PORT)
+	err = app.Listen($PORT)
 	if err != nil {
 		log.Panicln(err)
 	}
